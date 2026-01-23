@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-
 #define MAX_ESTUDIANTES 100
 #define MAX_TEXTO 100
-
 // Estructura Estudiante
 typedef struct
 {
@@ -14,7 +12,6 @@ typedef struct
     float promedio;         // Promedio (0.0 a 10.0)
     bool activo;            // Estado activo/inactivo
 } Estudiante;
-
 // Prototipos de funciones
 void actualizarNombre(Estudiante *e, char nuevoNombre[]);
 void actualizarCodigo(Estudiante *e, char nuevoCodigo[]);
@@ -30,7 +27,6 @@ void mostrarActivo(Estudiante e);
 void mostrarInformacionCompleta(Estudiante e);
 
 int buscarEstudiantePorCodigo(Estudiante lista[], int total, char codigo[]);
-
 // Función principal
 int main()
 {
@@ -131,9 +127,7 @@ int main()
 
     return 0;
 }
-
 // Funciones de actualización
-
 void actualizarNombre(Estudiante *e, char nuevoNombre[])
 {
     strcpy(e->nombre, nuevoNombre);
@@ -215,7 +209,6 @@ void mostrarInformacionCompleta(Estudiante e)
 }
 
 // Función de búsqueda
-
 int buscarEstudiantePorCodigo(Estudiante lista[], int total, char codigo[])
 {
     for (int i = 0; i < total; i++)
