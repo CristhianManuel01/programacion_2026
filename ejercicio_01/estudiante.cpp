@@ -54,7 +54,7 @@ void Estudiante::actualizarActivo(bool nuevoEstado)
     activo = nuevoEstado;
 }
 
-// ================= GETTERS =================
+//GETTERS
 
 std::string Estudiante::obtenerNombre()
 {
