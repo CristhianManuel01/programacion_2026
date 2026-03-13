@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::cout << "=== Sistema de Figuras Geométricas (Polimorfismo) ===" << std::endl;
+    std::cout << "=== Sistema de Figuras Geométricas  ===" << std::endl;
     std::cout << std::endl;
 
     Figura *f1 = new Circulo("Círculo", 5.0);
